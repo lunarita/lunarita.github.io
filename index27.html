@@ -8,36 +8,41 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=cyrillic-ext" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
+<link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 <script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/carousel/owl.carousel.js"></script>
+<script src="js/carousel/owl.support.js"></script>
 </head>
 <body>
+   <div class="logo">
+		<a href="#"><img src="image/psy.png" width="20%" height="90%""></a>
+    </div>
+
    <div class="wrapper">
-   <!--  header 
+   
+      <!--  header 
   -логотип(создать логотип для страницы)
-  -меню
-
-
+  -меню animated pulse
   -->
  
  
 <main class="wrapper">
-	<header>
+  <header>
  <!--создать логотип для страницы-->
- <div class="toy">
-                <a href="#"><img src="image/toy6.gif" width="100%" height="3%" alt="что-то про нашу фирму"></a>		
-    </div>
-    <div class="logo animated pulse">
-        <a href="#"><img src="image/tree.png" width="10%" height="10%" alt="что-то про нашу фирму"></a>
+ 
+     <div class="color">
+        <a href="#"><img src="image/color.jpg" width="100%" height="100%" alt="что-то про нашу фирму"></a>
     </div>
    <nav>
-   <ul class="main_menu ">
-        <li><a href="#">Home</a></li>
-		<li><a href="#">О нас</a></li>
-		<li><a href="#">Отзывы</a></li>
-		<li><a href="#">Обратная связь</a></li>
-    </ul>
-   </nav>
+     <ul class="main_menu ">
+        <li><a href="#">HOME</a></li>
+		<li><a href="#">О НАС</a></li>
+		<li><a href="#">ОТЗЫВЫ</a></li>
+		<li><a href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
+     </ul>
+	</nav>
  </header>
  
  <!--сcontent
@@ -50,25 +55,19 @@
  -->
  
   
-   <!-- <a href="#callback_form"><img src="image/callback_img-01.jpg" alt="Оператор" align="left" class="tel" height="300" width="40"></a>
-	   <section class="karusel" height="350">
-	        <!--разместить iframe с возможностью просмотра страниц-->
-	        <!--<nav>
-	         <iframe class="my_frame" src="#" name="karusel">
-	         <!--надо ли здесь что-то разместить?-->
-             </iframe>
-	        <br>
-	        <ul class="cadr">
-                <li><a href="#">Кадр1</a></li>
-				<li><a href="#">Кадр2</a></li>
-				<li><a class="f1" href="#">Кадр3</a></li>
-			    </ul>
-		    </nav>
-	    </section>
+    <a href="#callback_form"><img src="image/callback_img-01.jpg" alt="Оператор" align="left" class="tel" height="300" width="40"></a>
+	
+	   <div class="owl-carousel owl-theme">
+			<div class="item" style="width:250px"><img src="image/owl_pic_1.jpg"></div>
+			<div class="item" style="width:250px"><img src="image/owl_pic_2.jpg"></div>
+			<div class="item" style="width:250px"><img src="image/owl_pic_3.jpg"></div>
+			<div class="item" style="width:250px"><img src="image/owl_pic_4.jpg"></div>
+			<div class="item" style="width:250px"><img src="image/owl_pic_5.jpg"></div>
+	   </div>
 		
 		<article>
 		<!--выбрать шрифт для заголовка-->
-		 <div class="animated mov"><h1 id="main_title ">Счастливого Нового года!</h1></div> 
+		 <div><h1 id="main_title" >УДИВИТЕЛЬНЫЕ ИСТОРИИ</h1></div> 
 		        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. 
 				Маленькийручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
 
@@ -102,23 +101,19 @@
 		<section class="my_form">
 			<form id="callback_form" method="post" action="formd.php" name="my_form">
 			<fieldset> 
-				<legend>Форма заказа обратнного звонка</legend>
-					<hr>
-					<span><label for="name_input">Введите ваше имя (не более 10 символов)</label><br/></span>
-					<input id="name_input" type="text" maxlength="10" size="50" pattern="[а-яА-Я0-9]+" placeholder="Володя" title="Только кирилица" required>
-					<hr>
-					<label for="phone_input">Введите номер телефона</label><br/>	
-					<input id="phone_input" type="tel" pattern="^\d{1}-\d{3}-\d{7}$" placeholder="8-033-5555555" title="формат ввода: x-xxx-xxxxxxx" required >
-					<hr>
-					<label for="email_input">Введите ваш e-mail</label><br/>
-					<input id="email_input" type="email" size="50" placeholder="example@example.com" required >
-					<hr>
-					<label for="date_input">Укажите дату и время звонка</label><br>
-					<input id="date_input" type="datetime" pattern="(\d{2})-(\d{2})-(\d{4}) (\d{2}):(\d{2})" size="50"  placeholder="01-01-2017 18:30" title="формат ввода: dd-mm-yyyy hh:mm" required >
+				<legend>Форма заказа обратного звонка</legend>
 					<br>
-					<hr>
+					<span><label for="name_input">Введите ваше имя</label><br/></span>
+					<input id="name_input" type="text" maxlength="10" size="50" pattern="[а-яА-Я0-9]+"  title="Только кирилица" required>
+					<br>
+					<label for="phone_input">Введите номер телефона</label><br/>	
+					<input id="phone_input" type="tel" size="50" pattern="^\d{1}-\d{3}-\d{7}$"  title="формат ввода: x-xxx-xxxxxxx" required >
+					<br>
+					<label for="email_input">Введите ваш e-mail</label><br/>
+					<input id="email_input" type="email" size="50"  required >
+					<br>
 					<label>
-						<input id="sub_input" type="submit" name="sub_form" value="Отправить">
+						<span id="btn_send"><a  href="#">Отправить</a></span>
 					</label>
 			</fieldset>
 		</form>
@@ -140,7 +135,7 @@
  <footer>
  <!--создать логотип для страницы-->
    <div class="logo">
-     <a href="#"><img src="image/logo/png" width="100%" height="100%" alt="что-то про нашу фирму"></a>
+     <!--<a href="#"><img src="image/logo/png" width="100%" height="100%" alt="что-то про нашу фирму"></a>-->
    </div>
     <nav>
 	 <ul class="foot_refs">
@@ -153,27 +148,30 @@
 	<div class="clear"></div>
 	
 	<ul class="social_btn">
-        <li><a href="https://vk.com" target="_blank"><img src="image/vk.png" width="18%" height="18%"></a></li>
-		<li><a href="https://ok.ru" target="_blank"><img src="image/ok.png " width="18%" height="18%"></a></li>
-		<li><a href="https://www.facebook.com" target="_blank"><img src="image/fb.png" width="18%" height="18%"></a></li>	
+        <li><a href="https://vk.com" target="_blank"><img src="image/soc_btn_face.png" width="18%" height="18%"></a></li>
+		<li><a href="https://ok.ru" target="_blank"><img src="image/soc_btn_insta.png " width="18%" height="18%"></a></li>
+		<li><a href="https://www.facebook.com" target="_blank"><img src="image/soc_btn_go.png" width="18%" height="18%"></a></li>	
+		<li><a href="https://www.facebook.com" target="_blank"><img src="image/soc_btn_pin.png" width="18%" height="18%"></a></li>
     </ul>
 
     </nav>
+	
 	  <div class="copyR">
 			<p>Данный сайт мой, разработан мной и защищен мной 2017</p>
 		</div>
  </footer>
  </div>
- <script>
-$(window).scroll(function() {
-    $('.mov').each(function(){
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+200) {
-        $(this).addClass('pulse');
-      }
-    });
-  });
+<script>
+	$('.owl-carousel').owlCarousel({
+	dots:true,
+    margin:10,
+    loop:true,
+    items:3,
+	rewind:true,
+	autoplay:true,
+	autoplayTimeout:5000,
+	nav:true
+})
 </script>
 </body>
 </html>

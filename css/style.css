@@ -6,12 +6,21 @@
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    background-image: url("../image/winter2.jpg");
-	background-repeat: repeat-y;
- /*background-color:#F3D4F4; 
+	background-color:#606c88;
+    	background-repeat: repeat-y;
+ /*background-image: url("../image/winter2.jpg"); 
   /*background: #d2dfed;
   
 /* http://www.colorzilla.com/gradient-editor/ */
+}
+.logo{
+	background-color: black;
+	height: 50px;
+	text-align: center;
+}
+
+p{
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 div,nav, .wrapper{
@@ -23,12 +32,28 @@ div,nav, .wrapper{
 	align-items:center;
 	/*padding: 0 0 0 60px;*/
 	/* outline: 1px solid red; */
-	background: #606c88;
-  
+	background: #E2E2E2;
+}
+.main_menu{
+	margin: 20px;
+}
+
+.main_menu a{
+	color: black;
+	text-decoration: none;
+	margin: 8%;
+}
+.main_menu a:hover{
+	text-decoration: underline;
+}
+
+.clear{
+	clear: both;
 }
 
 .my_frame{
 	margin: 5% auto;
+	
 }
 
 .copyR{
@@ -45,30 +70,28 @@ div,nav, .wrapper{
 .foot_refs li, .social_btn li{
 	list-style-type: none;
 	float: left;
-	width: 160px;
+	width: 210px;
 	margin:1% auto;
 	
 	
 }
 
 .foot_refs a, .social_btn a{
-	margin:12%;
+	margin:10%;
 }
 
-.main_menu a{
-	color: black;
-	text-decoration: none;
-	margin: 8%;
-}
-
-.clear{
-	clear: both;
+.social_btn{
+	text-align: center;
+	margin-left:30px;
 }
 
 #main_title{
-	font-family: 'Indie Flower', cursive;
-	font-size: 100px;
-    color: rgb(255,255,255);	
+	text-align: center;
+	margin-top:30px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 30px;
+    color: black;	
+	font-weight: 50;
 }
 
 /*==================================================
@@ -81,13 +104,9 @@ div,nav, .wrapper{
 
 */
  #table{
- 	border: 2px;
+ 	border: 0px;
 	color:red;
-	border-color: black;
-}
-
-#blok{
-	color:rgb(77,12,128);
+	border-color: white;
 }
 
 /*
@@ -113,20 +132,20 @@ h1, #table, .blok{
 }
 .f1:hover{
 	color: rgb(255,0,0);
-text-decoration: overline;}
+text-decoration: underline;}
 
 
 p{
-	
-	font-style: italic;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: rgb(0,0,0);
-	font-weight: 700;
+	font-weight: 400;
 		/*text-align: left ;*/
 	padding: 15px;
-	margin: 40px;
-	text-indent:20px;
-	border: 1px solid blue;
-	/*border-radius: 5px;*/
+	margin: 20px 20px;
+	padding: 0px;
+	border: none;
+	text-align:justify;
+
 	
 }
 
@@ -146,13 +165,19 @@ li{
 
 /*img{
 	display: inline-block;
+	margin: 250 0 0 250;
 }*/
 
+#callback_form{
+	width: 500px;
+	border: none;
+}
 
-/* .my_form{
-	margin: 250 0 0 250;
-margin: 0 auto;
-} */
+.my_form{
+	padding: 15px;
+	margin: 40px 220px;
+	   	
+} 
 
 label{
 	padding: 0px;
@@ -160,10 +185,11 @@ label{
 }
 
 fieldset{
-	width: 500px;
+	width: 400px;
 }
 
 legend{
+	text-align: center;
 	padding: 7px 7px 7px 7px;
 	/* margin-top: 20px; */
 	margin-left: 131px;
@@ -180,5 +206,4 @@ legend{
 .foot_refs a:hover{
 	background:#aaa;
 }
-
 
